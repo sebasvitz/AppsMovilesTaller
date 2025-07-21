@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo - Stardew Valley</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Principal -->
+    <header class="main-header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Nintendo.svg/250px-Nintendo.svg.png"
+                        alt="Nintendo" class="nintendo-logo">
+                </div>
+
+                <div class="search-container">
+                    <input type="text" placeholder="Search games, hardware, news, etc." class="search-input">
+                    <select class="category-dropdown">
+                        <option>All categories</option>
+                        <option>Games</option>
+                        <option>Hardware</option>
+                        <option>News</option>
+                    </select>
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="header-icons">
+                    <a href="#" class="header-link"><i class="fas fa-headset"></i> Support</a>
+                    <a href="#" class="header-link"><i class="fas fa-heart"></i> Wish List</a>
+                    <a href="#" class="header-link"><i class="fas fa-shopping-cart"></i> Cart</a>
+                    <a href="#" class="header-link"><i class="fas fa-user"></i> Log in / Sign up</a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-store"></i> My Nintendo Store <i
+                                class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-gamepad"></i> Games <i
+                                class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-tv"></i> Nintendo Switch <i
+                                class="fas fa-chevron-down"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-newspaper"></i> News & Events</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-play"></i> Play Nintendo <i
+                                class="fas fa-chevron-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="promo-banner">
+            <div class="container">
+                <div class="promo-content">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Free shipping on orders $50 or more. <a href="#">Restrictions apply</a></span>
+                </div>
+                <div class="points-info">
+                    <i class="fas fa-coins"></i>
+                    <span>Earn <strong>My Nintendo Points</strong> on digital games</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="#">Store</a> > <a href="#">Games</a> > <span>Stardew Valley</span>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <div class="container">
+            <div class="game-layout">
+                <!-- Galería de Imágenes -->
+                <div class="game-gallery">
+                    <div class="main-image">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_656/b_white/f_auto/q_auto/ncom/software/switch/70010000000142/hero/7497080bd7c8103e71fa3b8b9e6e6e0fe7c83d2e99c6e0b3f2e1f6e9e1f7a4e0"
+                            alt="Stardew Valley" class="gallery-main-img" id="mainImage">
+                    </div>
+                    <div class="thumbnail-grid">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_164/b_white/f_auto/q_auto/ncom/software/switch/70010000000142/dfe2aa3f3b2b8ca4154a8f33fbe1a45edc1c6e96a3dd8a0e1f7e2f1e2f0a9b2e1"
+                            alt="Screenshot 1" class="thumbnail active" onclick="changeImage(this)">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_164/b_white/f_auto/q_auto/ncom/software/switch/70010000000142/8f3e2f1e2f0a9b2e1dfe2aa3f3b2b8ca4154a8f33fbe1a45edc1c6e96a3dd8a0e"
+                            alt="Screenshot 2" class="thumbnail" onclick="changeImage(this)">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_164/b_white/f_auto/q_auto/ncom/software/switch/70010000000142/b2e1dfe2aa3f3b2b8ca4154a8f33fbe1a45edc1c6e96a3dd8a0e1f7e2f1e2f0a9"
+                            alt="Screenshot 3" class="thumbnail" onclick="changeImage(this)">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_164/b_white/f_auto/q_auto/ncom/software/switch/70010000000142/ca4154a8f33fbe1a45edc1c6e96a3dd8a0e1f7e2f1e2f0a9b2e1dfe2aa3f3b2b8"
+                            alt="Screenshot 4" class="thumbnail" onclick="changeImage(this)">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_164/b_white/f_auto/q_auto/ncom/software/switch/70010000000142/1a45edc1c6e96a3dd8a0e1f7e2f1e2f0a9b2e1dfe2aa3f3b2b8ca4154a8f33fbe"
+                            alt="Screenshot 5" class="thumbnail" onclick="changeImage(this)">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_164/b_white/f_auto/q_auto/ncom/software/switch/70010000000142/96a3dd8a0e1f7e2f1e2f0a9b2e1dfe2aa3f3b2b8ca4154a8f33fbe1a45edc1c6e"
+                            alt="Screenshot 6" class="thumbnail" onclick="changeImage(this)">
+                    </div>
+                </div>
+
+                <!-- Información del Juego -->
+                <div class="game-info">
+                    <div class="platform">Nintendo Switch</div>
+                    <h1 class="game-title">Stardew Valley</h1>
+                    <div class="price-section">
+                        <span class="price">$14.99</span>
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+
+                    <div class="gold-points">
+                        <i class="fas fa-coins"></i>
+                        <span>Eligible for up to <strong>75 Gold Points</strong></span>
+                    </div>
+
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Direct download
+                    </button>
+
+                    <p class="download-info">This item will be sent to your system automatically after purchase.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Lightbox para Galería -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-prev" onclick="prevImage()">&#8249;</button>
+            <button class="lightbox-next" onclick="nextImage()">&#8250;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
