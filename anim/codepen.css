@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+}
+
+#paisaje {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: 1px solid gray;
+    background: #00BFFF;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.objeto {
+    position: absolute;
+}
+
+#sol {
+    top: 45px;
+    right: 70px;
+}
+
+#nevado {
+    bottom: -17px;
+    left: -17px;
+}
+
+#nevado2 {
+    bottom: -17px;
+    right: -30px;
+}
+
+#bici {
+    bottom: -25px;
+    left: 150px;
+    z-index: 1;
+}
+
+#arbol {
+    right: 80px;
+    bottom: -4px;
+    z-index: 2;
+}
+
+#controles {
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
